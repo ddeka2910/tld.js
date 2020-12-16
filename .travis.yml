@@ -18,7 +18,7 @@ notifications:
   email:
     on_failure: change
 
-install: npm install --tldjs-update-rules
+install: travis_wait 30 npm install --tldjs-update-rules
 
 post_script: npm run benchmark
 
